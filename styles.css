@@ -1,159 +1,128 @@
 
-@media only screen and (max-width: 600px) {
-    /* CSS styles for screens less than 600px wide (example: mobile devices) */
-  }
-
-/*BODY*/
-body{
-    margin: 100px;
-
+/* Reset some default styles */
+body, h2, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
 
-/*NAVBAR*/
-    .navbar {
-        position: relative;
-        background-color: #ffffff;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    
-    .navbar-brand {
-        margin: 0;
-    }
-    
-    .navbar-toggler {
-        border: none;
-        background-color: transparent;
-        padding: 0;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    
-    .navbar-toggler-icon {
-        font-size: 30px;
-        color: #000000;
-        align-items: center;
-    }
-    
-    .navbar-collapse {
-        flex-grow: 1;
-    }
-    
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-    
-    .nav-item {
-        margin-bottom: rem;
-    }
-    
-    .nav-link {
-        color: #000000;
-        font-size: 14px;
-        text-decoration: none;
-    }
-    
-    .nav-link:hover {
-        color: #ccc;
-    }
-  
+h2{
+    text-align: center;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    font-size: 30px;
+    color: #000000;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-item {
+    margin-bottom: rem;
+}
+
+.nav-link {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
 /* -- BURGER MENU STYLES -- */
-    .navbar-toggler-icon::before {
-        content: "\f0c9";
-        font-family: "Playfair Display", serif; 
-        font-weight: 900;
-        
-    }
+.navbar-toggler-icon::before {
+    content: "\f0c9";
+    font-family: "Playfair Display", serif; 
+    font-weight: 900;
     
-    .navbar-toggler-icon.open::before {
-        content: "\f00d";
-    }
-    
-    #nav-toggler {
-        position: relative;
-    }
-    
-    #nav-toggler::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        z-index: 1;
-    }
-    
-    #nav-toggler.open::after {
-        background-color: transparent;
-    }
-    
-    #navbarNav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #fdfdfd7a;
-        color: #333333;
-        padding: 1rem;
-        display: none;
-    }
-    
-    #navbarNav.open {
-        display: block;
-    }
-/* -- CART ICON -- */
-    .cart-icon {
-        position: absolute;
-        left: 20px;
-        top: 10px;
-        font-size: 24px;
-        color: #999999;
-        text-decoration: none;
-    }
-    
-    .cart-icon:hover {
-        color: #3f3f3f;
-    }
-    
-    .cart-count {
-        font-size: 14px;
-        background-color: #000000;
-        color: #fff;
-        padding: 2px 5px;
-        border-radius: 50%;
-        position: absolute;
-        top: -5px;
-        right: -5px;
-    }
+}
+
+.navbar-toggler-icon.open::before {
+    content: "\f00d";
+}
+
+#nav-toggler {
+    position: relative;
+}
+
+#nav-toggler::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#nav-toggler.open::after {
+    background-color: transparent;
+}
+
+#navbarNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fdfdfd7a;
+    color: #333333;
+    padding: 1rem;
+    display: none;
+}
+
+#navbarNav.open {
+    display: block;
+}
 
 /* HERO SECTION */
-    .hero {
-        background-image: url('Assets/Jennie2.webp'); 
-        background-size: cover;
-        font-family: "Playfair Display", serif; 
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        
-        
-        align-items: left;
-        padding-left: 70px;
-        color: white;
-    
-    }
-
-    .heroes h1 {
-        font-size: 70px; 
-    }
-    .hero:hover {
+.hero { 
+    background-image: url('Assets/Heroesbanner.png'); 
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero:hover {
         animation: fadeIn 0.5s ease-in-out forwards, hoverEffect 3s ease-in-out;
     }
 
@@ -177,7 +146,6 @@ body{
             transform: scale(1);
         }
     }
-
 /* ABOUT US */
 .about-container {
     display: flex;
@@ -221,119 +189,168 @@ body{
         max-width: 100%;
     }
 }
-  
+
+
+
+/* MAIN CONTENT*/
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
 
 /* PRODUCT CARD*/
-    .container {
+    .product {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 17px;
-        padding: 5px;
-    }
+        gap: 20px;
+        max-width: 1200px; 
+        margin: 40px auto; 
+}
     
+
     .card {
-        width: 250px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-        
+    flex-basis: 250px; 
+    margin: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
     }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* This creates a grid with 4 columns */
+        gap: 20px; /* This adds some space between the cards */
+      }
     
+      .card {
+        grid-column: span 1; /* This ensures that each card spans only 1 column */
+      }
+
+        
+    
+
     .card img {
         width: 100%;
         height: 250px;
         object-fit: cover;
     }
-    
+
     .card-content {
         padding: 10px;
     }
-    
+
     .card-title {
         font-family: "Playfair Display", serif; 
         font-size: 15px;
         font-weight: bold;
     }
-    
+
     .card-price {
         font-family: 'Minion Pro', sans-serif;
         font-size: 15px;
         color: #333;
     }
-    
+
     .card-colors {
-        font-size: 14px;
         color: #ffffff;
     }
-    
-    .fa-heart {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-    
-    .fa-heart:before {
-        content: "";
-        display: block;
-    }
 
-/* TEAM */
-    .container h1 {
-        text-align: center;
-        color: #333333;
-    }
+  
+  .button-0 {
+    font-family: "Playfair Display", serif; 
+    background-color: #89ADBD;
+    color: #000000;
+    border: 1px solid black;
+    padding: 10px  20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    font-weight: bold;
+    width: 200%; 
 
-    .members {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-    }
+
+
+}
   
-    .member {
-        width: 200px;
-        height: 200px; 
-        background-color: #ffffff;
-        border-radius: 50%; 
-        margin: 20px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-    }
-  
-  .member img {
-    max-width: 100%; 
-    max-height: 100%; 
-    border-radius: 50%; 
+  .button-0:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #000000;
   }
 
-/* ICON SECTION */
-    .icon-section {
-        padding: 30px 0;
-        text-align: center;
-        background-color: #ffffff;
-        color: #000000;
-        margin-bottom: 40px;
-    }
+.fa-heart {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 
-        .feature-icon {
-            width: 100px; 
-            height: auto;
-            margin-bottom: 30px;
-            
-        }
+.fa-heart:before {
+    content: "";
+    display: block;
+}
 
 
+/* TEAM */
 
+.team-section {
+    text-align: center;
+    padding: 70px;
+    background-color: #182B2F;
+}
+.team-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 200px;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.team-member h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.team-member p {
+    color: gray;
+    margin: 5px 0;
+}
+.team-member .social-icons {
+    margin-top: 10px;
+}
+.team-member .social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+.team-member .social-icons img {
+    width: 20px;
+    height: 20px;
+}
 
-
-       
-
-    /* FORM */
+/* FORM */
 .contact-info {
     padding: 20px;
     background: #fff;
@@ -405,34 +422,32 @@ body{
     }
 }
 
-/* Responsive design for small screens */
+/
 @media (max-width: 768px) {
     .contact-section {
-        max-width: 100%; /* Make the section take up 100% of the screen width on small screens */
+        max-width: 100%; /
     }
 }
 
-/* Responsive design for very small screens */
+
 @media (max-width: 576px) {
     .contact-section {
-        max-width: 100%; /* Make the section take up 100% of the screen width on very small screens */
+        max-width: 100%; /
     }
 }
-
-
-  
-  /*color:  #182B2F
-
 /* FOOTER */
 footer { 
     background-color: #182B2F; 
     color: #fff; 
     padding: 10px; 
     text-align: center; 
-    width: 120vw; 
     margin-left: -100px; 
     padding-left: 100px; 
     box-sizing: border-box; 
     position: relative;
     left: 0;
   }
+
+
+
+  
