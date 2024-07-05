@@ -1,11 +1,10 @@
 // Add an event listener to each heart icon
-document.querySelectorAll('.fa-heart').forEach(heart => {
-  heart.addEventListener('click', () => {
-    // Toggle the favourite state
-    heart.classList.toggle('fas');
-    heart.classList.toggle('far');
+(function() {
+  const heart = document.getElementById('heart');
+  heart.addEventListener('click', function() {
+    heart.classList.toggle('red');
   });
-});
+})();
 
 // Add to Favourites 
 document.querySelectorAll('.fa-heart').forEach(heart => {
