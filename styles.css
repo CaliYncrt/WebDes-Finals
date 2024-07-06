@@ -27,6 +27,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar-brand {
@@ -221,12 +222,12 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    
 }
 
 .card {
     width: 250px;
     border: 1px solid #ddd;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -261,7 +262,7 @@ body {
     color: #000000;
     padding: 10px 20px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
     width: 100%;
@@ -269,6 +270,15 @@ body {
     font-weight: bold;
     transition: background-color 0.2s ease-in-out;
 }
+
+.card-hover {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+.card-hover:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
 
 .fa-heart {
     cursor: pointer;
@@ -305,6 +315,10 @@ body {
     }
 }
 
+
+
+
+
 /* ICON SECTION */
 .mb-5{
     font-family: "Playfair Display", serif; 
@@ -329,52 +343,83 @@ body {
 
 /* TEAM */
 
+/* TEAM */
+
 .team-section {
     text-align: center;
-    padding: 70px;
+    padding: 80px 20px; 
     background-color: #182B2F;
 }
+
 .team-section h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 40px; 
+    margin-bottom: 30px; 
     color: white;
 }
+
 .team-container {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 20px;
 }
+
 .team-member {
     background: white;
-    padding: 20px;
+    padding: 40px; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 200px;
+    width: 280px; 
+    max-width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
+
 .team-member img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
+
 .team-member h2 {
-    font-size: 20px;
+    font-size: 20px; 
     margin: 10px 0;
 }
+
 .team-member p {
     color: gray;
     margin: 5px 0;
+    font-size: 14px; 
 }
+
 .team-member .social-icons {
     margin-top: 10px;
 }
+
 .team-member .social-icons a {
     margin: 0 5px;
     text-decoration: none;
 }
+
 .team-member .social-icons img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.team-member {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%; 
+    }
 }
 
 /* FORM */
