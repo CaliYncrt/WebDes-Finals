@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Add event listener to each heart icon
   document.querySelectorAll('.fa-heart').forEach(heart => {
       heart.addEventListener('click', () => {
           heart.classList.toggle('red');
