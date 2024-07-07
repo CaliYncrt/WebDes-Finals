@@ -130,11 +130,11 @@ h3, h2, h1 {
     }
 
     .payment-form .products {
-        padding: 40px;
+        padding: 30px;
     }
 
     .payment-form .products .item-name {
-        font-size: 1em;
+        font-size: 3px;
     }
 
     .payment-form .products .price {

@@ -1,18 +1,18 @@
 /* login.css */
 body{
-  background-color: black;
+  background-color: #89ADBD;
   margin-top: 10px;
 }
 
 
 .form {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: linear-gradient(to right bottom, #182B2F, #fdfeff);
+    background: linear-gradient(to right bottom, #ffffff, #a7a6a6);
     padding: 30px;
     width: 450px;
     border-radius: 20px;

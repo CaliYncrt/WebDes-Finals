@@ -1,17 +1,13 @@
-// Add an event listener to each heart icon
-(function() {
-  const heart = document.getElementById('heart');
-  heart.addEventListener('click', function() {
-    heart.classList.toggle('red');
+document.addEventListener('DOMContentLoaded', () => {
+  // Add event listener to each heart icon
+  document.querySelectorAll('.fa-heart').forEach(heart => {
+      heart.addEventListener('click', () => {
+          heart.classList.toggle('red');
+      });
   });
-})();
+});
 
-// Add to Favourites 
-document.querySelectorAll('.fa-heart').forEach(heart => {
-    heart.addEventListener('click', () => {
-      heart.classList.toggle('favourite');
-    });
-  });
+
 
   const navToggler = document.getElementById('nav-toggler');
 const navbarNav = document.getElementById('navbarNav');

@@ -153,6 +153,22 @@ h2 {
             transform: scale(1);
         }
     }
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 40px 10px; /* adjust padding for mobile */
+  }
+  .team-section h1 {
+    font-size: 30px; /* reduce font size for mobile */
+  }
+  .team-container {
+    flex-direction: column; /* stack team members vertically on mobile */
+  }
+  .team-member {
+    width: 100%; /* make team members full-width on mobile */
+    margin-bottom: 40px; /* add some space between team members on mobile */
+  }
+}
 /* ABOUT US */
 .about-container {
     display: flex;
